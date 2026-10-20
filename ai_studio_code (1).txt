@@ -1,0 +1,22 @@
+┌────────────────────────────────────────────────────────────────────────┐
+│                        KIDS AI WORLD PROJECT                           │
+├────────────────────────────────────────────────────────────────────────┤
+│  Root: settings.gradle.kts (Project: "Kids AI World")                  │
+│  Version Catalog: gradle/libs.versions.toml                            │
+│  App Module: app/build.gradle.kts (applicationId: com.aistudio...)    │
+│  Manifest: app/src/main/AndroidManifest.xml (Permissions & Launcher)   │
+├────────────────────────────────────────────────────────────────────────┤
+│  UI Layer: Jetpack Compose (Material Design 3)                         │
+│  ├── MainActivity.kt (Root Navigation & Mode Switcher)                 │
+│  ├── screens/ (KidsHomeScreen, FreeAiImageGeneratorScreen, etc.)      │
+│  └── components/ (KidsTopBar, KidsBottomNavigation, LockoutOverlay)    │
+├────────────────────────────────────────────────────────────────────────┤
+│  Data Layer: StateFlow & Kotlin Coroutines                             │
+│  ├── viewmodel/KidsViewModel.kt (Central reactive state & handlers)    │
+│  ├── remote/ (KidsAiService.kt, ImageGeneratorService.kt)              │
+│  ├── local/ (KidsRepository.kt - Games, Videos, Stories, Vocab)        │
+│  └── audio/ (KidsAudioEngine.kt - Android TTS & AudioTrack synthesis)  │
+├────────────────────────────────────────────────────────────────────────┤
+│  Build Output:                                                         │
+│  └── /.build-outputs/app-debug.apk (Pre-compiled installable binary)   │
+└────────────────────────────────────────────────────────────────────────┘
